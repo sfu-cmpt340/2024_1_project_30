@@ -2,7 +2,7 @@
 This repository is a template for your CMPT 340 course project.
 Replace the title with your project title, and **add a snappy acronym that people remember (mnemonic)**.
 
-Add a 1-2 line summary of your project here.
+(1-2 line summary) Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
 
 ## Important Links
 
@@ -64,6 +64,8 @@ Provide _exact_ versions, test on CSIL or reference workstations.
 1. Make sure you have Python 3.11+ installed
 2. Make sure you have OpenCV installed
 3. numpy, keras tensorflow, matplotlib.pyplot
+
+As our program utilises the tensorflow Keras models, OpenCV and matlab plots for image processing and visualization.
 
 ```bash
 git clone $THISREPO
