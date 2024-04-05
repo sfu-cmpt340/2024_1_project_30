@@ -61,6 +61,10 @@ repository
 Provide sufficient instructions to reproduce and install your project. 
 Provide _exact_ versions, test on CSIL or reference workstations.
 
+1. Make sure you have Python 3.11+ installed
+2. Make sure you have OpenCV installed
+3. numpy, keras tensorflow, matplotlib.pyplot
+
 ```bash
 git clone $THISREPO
 cd $THISREPO
