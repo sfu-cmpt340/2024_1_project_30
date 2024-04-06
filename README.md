@@ -84,7 +84,11 @@ unzip dataset.zip
 conda activate amazing
 python evaluate.py --epochs=10 --data=/in/put/dir
 ```
-Data can be found at ...
+Datasets used in our analysis can be found: 
+1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
+2. [Annotated Dataset of Bone Marrow Cytology](https://www.cancerimagingarchive.net/collection/bone-marrow-cytomorphology_mll_helmholtz_fraunhofer/)
+3. To be Added
+
 Output will be saved in ...
 
 <a name="guide"></a>
