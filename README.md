@@ -121,8 +121,8 @@ drive.mount('/content/drive')
 #if drive.mount('/content/drive') doesn't work:
 from google.colab import drive
 drive.mount('/gdrive')
-#for unzipping the files 
-!unzip
+#for unzipping the datasets onto colab
+!unzip path_to_file.zip -d path_to_directory
 ```
 Make sure you approve ALL permissions for colab to access your google drive.
 
