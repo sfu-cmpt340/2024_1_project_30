@@ -154,8 +154,3 @@ plt.xlabel('Epoch')
 plt.legend()
 plt.show()
 
-# Print the final cost value for training and validation
-final_train_loss = history.history['loss'][-1]
-final_val_loss = history.history['val_loss'][-1]
-print('The final training cost value is', final_train_loss)
-print('The final validation cost value is', final_val_loss)
