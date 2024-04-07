@@ -18,6 +18,8 @@ Replace the title with your project title, and **add a snappy acronym that peopl
 ## Video/demo/GIF
 Record a short video (1:40 - 2 minutes maximum) or gif or a simple screen recording or even using PowerPoint with audio or with text, showcasing your work.
 
+[Video Link: currently a placeholder](https://www.youtube.com/watch?v=ChfEO8l-fas)
+
 
 ## Table of Contents
 1. [Demo](#demo)
@@ -32,7 +34,8 @@ Record a short video (1:40 - 2 minutes maximum) or gif or a simple screen record
 <a name="demo"></a>
 ## 1. Example demo
 
-A minimal example to showcase your work
+A minimal example to showcase your work.
+As there are 3/4 separate .py programs to run, we will demo the work one by one.  
 
 ```python
 from amazing import amazingexample
@@ -61,11 +64,19 @@ repository
 Provide sufficient instructions to reproduce and install your project. 
 Provide _exact_ versions, test on CSIL or reference workstations.
 
-1. Make sure you have Python 3.11+ installed
-2. Make sure you have OpenCV installed
-3. numpy, keras tensorflow, matplotlib.pyplot
+Before usage of this project, please make sure the following are installed: 
 
-As our program utilises the tensorflow Keras models, OpenCV and matlab plots for image processing and visualization.
+1. Python 3.11+
+2. OpenCV (any version)
+3. numpy, keras tensorflow, matplotlib.pyplot, neuralplot 
+
+Our program utilises tensorflow and neuralplot to produce Keras models of the NN during training while OpenCV and matlab plots are necessary for image processing and visualization.
+
+Alternatively, all parts of our project can be ran on Jupyter notebook or Google Colaboratory without the installation of additional imports except neuralplot. To install neuralplot on Google Colaboratory, please type the following into the command window:
+
+```python
+!pip install neuralplot
+```
 
 ```bash
 git clone $THISREPO
