@@ -81,13 +81,16 @@ pip install --upgrade keras-cv
 pip install --upgrade keras-nlp
 pip install --upgrade keras
 
- # tensorflow requires the latest version of pip
+# tensorflow requires the latest version of pip
 pip install --upgrade pip
 
 # Anything above 2.10 is not supported on the GPU on Windows Native, macOS is fine though
-pip install "tensorflow<2.11" 
-For macOS: brew install graphviz
-For Windows: pip install graphviz
+pip install "tensorflow<2.11"
+
+# For macOS:
+brew install graphviz
+# For Windows:
+pip install graphviz
 
 pip install os-sys
 pip install matplotlib
@@ -110,6 +113,27 @@ unzip dataset.zip
 conda activate amazing
 python evaluate.py --epochs=10 --data=/in/put/dir
 ```
+
+For mounting google drive to colab for opening the dataset files:
+```bash
+from google.colab import drive
+drive.mount('/content/drive') 
+```
+
+To run Ryan's and Chau's code, you'll want the NGS and EBO datasets (2.6GB)
+set it up in a folder like:
+```bash
+├── bincvdebug.py
+├── data
+│   ├── 0
+│       ├── NGS_00001.jpg
+│       ├── NGS_00002.jpg
+│       └── NGS...
+│   ├── 1
+│       ├── EBO_00001.jpg
+│       ├── EBO_00002.jpg
+│       └── EBO...```
+
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
 2. [Annotated Dataset of Bone Marrow Cytology](https://www.cancerimagingarchive.net/collection/bone-marrow-cytomorphology_mll_helmholtz_fraunhofer/)
