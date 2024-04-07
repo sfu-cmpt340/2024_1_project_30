@@ -68,7 +68,8 @@ Before usage of this project, please make sure the following are installed:
 
 1. Python 3.11+
 2. OpenCV (any version)
-3. numpy, keras tensorflow, matplotlib.pyplot, neuralplot 
+3. numpy, keras, tensorflow, matplotlib.pyplot, matplotlib.animation, neuralplot, pydot,graphviz
+
 
 Our program utilises tensorflow and neuralplot to produce Keras models of the NN during training while OpenCV and matlab plots are necessary for image processing and visualization.
 
@@ -76,6 +77,20 @@ Alternatively, all parts of our project can be ran on Jupyter notebook or Google
 
 ```python
 !pip install neuralplot
+pip install --upgrade keras-cv
+pip install --upgrade keras-nlp
+pip install --upgrade keras
+
+ # tensorflow requires the latest version of pip
+pip install --upgrade pip
+
+# Anything above 2.10 is not supported on the GPU on Windows Native, macOS is fine though
+pip install "tensorflow<2.11" 
+For macOS: brew install graphviz
+For Windows: pip install graphviz
+
+pip install os-sys
+pip install matplotlib
 ```
 
 ```bash
