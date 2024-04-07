@@ -117,13 +117,16 @@ For mounting google drive to colab for opening the dataset files:
 ```bash
 from google.colab import drive
 drive.mount('/content/drive')
+
 #if drive.mount('/content/drive') doesn't work:
 from google.colab import drive
 drive.mount('/gdrive')
+
 #for unzipping the datasets onto colab
 !unzip path_to_file.zip -d path_to_directory
 ```
 Make sure you approve ALL permissions for colab to access your google drive.
+We recommend uploading the unzipped database files because unzipping on colab may take some time.
 
 To run Ryan's and Chau's code, you'll want the NGS and EBO datasets (2.6GB)
 set it up in a folder like:
