@@ -70,13 +70,10 @@ Before usage of this project, please make sure the following are installed:
 2. OpenCV (any version)
 3. numpy, keras, tensorflow, matplotlib.pyplot, matplotlib.animation, neuralplot, pydot,graphviz
 
-
-Our program utilises tensorflow and neuralplot to produce Keras models of the NN during training while OpenCV and matlab plots are necessary for image processing and visualization.
-
-Alternatively, all parts of our project can be ran on Jupyter notebook or Google Colaboratory without the installation of additional imports except neuralplot. To install neuralplot on Google Colaboratory, please type the following into the command window:
+Our program utilises tensorflow and neuralplot to produce Keras models of the NN during training while OpenCV and matlab plots are necessary for image processing and visualization. To install the libraries, paste the following commands into your IDE command window: 
 
 ```python
-!pip install neuralplot
+pip install neuralplot
 pip install --upgrade keras-cv
 pip install --upgrade keras-nlp
 pip install --upgrade keras
@@ -95,6 +92,8 @@ pip install graphviz
 pip install os-sys
 pip install matplotlib
 ```
+
+Alternatively, all parts of our project can be ran on Jupyter notebook or Google Colaboratory without the installation of additional imports except neuralplot. If any libraries or imports are missing, please follow the above python commands to install them. 
 
 ```bash
 git clone $THISREPO
