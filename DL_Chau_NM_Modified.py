@@ -103,14 +103,19 @@ def update_figure(frame_index):
 
 
 
+    # Find which class has the highest predicted value for each test image and put them into an array
+    predicted_classes = np.argmax(predictions, axis=1)
+
+
+
     ## Sensitivity / Recall Metrics ##
 
     # Calclate the recall score for each class. In order of the classes provided in class_names
-    classwise_recall = recall_score(true_classes, predicted_class_index, average=None)
+    classwise_recall = recall_score(true_classes, predicted_classes, average=None)
     print("Class-specific recall = ", classwise_recall)
 
     # Calclate the recall score for each class then takes the average of them,
-    macro_recall = recall_score(true_classes, predicted_classes_index, average='macro')
+    macro_recall = recall_score(true_classes, predicted_classes, average='macro')
     print("Macro recall = ", macro_recall)
 
     # Compute the recall score for each individual prediction, treating them as equals regardless of class before taking the average.
@@ -127,7 +132,7 @@ def update_figure(frame_index):
 
 
     # Calculate the average precision score for each class.
-    precision = precision_score(true_classes, predicted_classes_index, labels = class_names, average = None)
+    precision = precision_score(true_classes, predicted_classes, labels = class_names, average = None)
     print("Precision = ", precision)
 
     # Calculate the precision of the entire validation set, accounting for label imbalance.
@@ -139,10 +144,10 @@ def update_figure(frame_index):
 
     # Calculate the accuracy for the entire model that takes the number of cases in each class into account.
     # The classes in our dataset are inequal in size. This should account for that.
-    bal_accuracy = balanced_accuracy_score(true_classes, predicted_classes_index)
+    bal_accuracy = balanced_accuracy_score(true_classes, predicted_classes)
     print("Balanced accuracy = ", bal_accuracy)
 
-    model_accuracy = accuracy_score(true_classes, predicted_classes_index)
+    model_accuracy = accuracy_score(true_classes, predicted_classes)
     print("Model  accuracy = ", model_accuracy)
 
 
@@ -153,7 +158,7 @@ def update_figure(frame_index):
     class_names = train_ds.class_names
 
     # Calculate and display the confusion matrix
-    conf_matrix = confusion_matrix(true_classes, predicted_classes_index, labels = class_names)
+    conf_matrix = confusion_matrix(true_classes, predicted_classes, labels = class_names)
     disp = ConfusionMatrixDisplay(conf_matrix, display_labels = class_names)
     disp.plot()
     plt.show()
