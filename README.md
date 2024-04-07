@@ -78,6 +78,9 @@ pip install --upgrade keras-cv
 pip install --upgrade keras-nlp
 pip install --upgrade keras
 
+# Needed for metrics
+pip install -U scikit-learn
+
 # tensorflow requires the latest version of pip
 pip install --upgrade pip
 
