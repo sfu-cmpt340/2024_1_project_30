@@ -132,7 +132,8 @@ set it up in a folder like:
 │   ├── 1
 │       ├── EBO_00001.jpg
 │       ├── EBO_00002.jpg
-│       └── EBO...```
+│       └── EBO...
+```
 
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
