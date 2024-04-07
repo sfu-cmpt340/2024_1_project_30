@@ -98,7 +98,7 @@ def update_figure(frame_index):
     
     
     #NM added the following code for metrics
-    Record the true classes of each cell in the validation set and put into an array to compare with the predicted classes
+    #Record the true classes of each cell in the validation set and put into an array to compare with the predicted classes
     true_classes = np.concatenate([y for x, y in val_ds], axis=0)
 
 
