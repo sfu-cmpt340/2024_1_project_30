@@ -146,8 +146,8 @@ set it up in a folder like:
 │       └── EBO...
 ```
 Important Reminders: 
-- (Chau program code name): Currently, running the animations for the NN visualization only functions in VSCode and will not show up in Google Colaboratory or Jupyter Notebook.
-
+- DL_Cell_Identification and DL_Confusion_Matrix: Currently, running the animations for the cell identification visualization only functions in VSCode and will not show up in Google Colaboratory or Jupyter Notebook.
+At this time, none of the DL code works with Blood_Cancer database because the database image file is in tiff, while the DL code only accepts jpeg, jpg, png.etc 
   
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
@@ -155,6 +155,7 @@ Datasets used in our analysis can be found:
 3. To be Added
 
 Output will be saved in ...
+The Keras model will be saved in png and dot. 
 
 <a name="guide"></a>
 ## 4. Guidance
