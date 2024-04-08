@@ -51,6 +51,8 @@ Explain briefly what files are found where
 
 ```bash
 repository
+├── Old_code                     ## Storage of discarded or duplicate program files
+├── Results                      ## Files and images outputted by the package
 ├── src                          ## source code of the package itself
 ├── scripts                      ## scripts, if needed
 ├── docs                         ## If needed, documentation   
