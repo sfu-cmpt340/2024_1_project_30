@@ -38,35 +38,10 @@ Record a short video (1:40 - 2 minutes maximum) or gif or a simple screen record
 A minimal example to showcase your work.
 As there are 3/4 separate .py programs to run, we will demo the work one by one.  
 
-Found 107 files belonging to 2 classes.
-Using 86 files for training.
-Found 107 files belonging to 2 classes.
-Using 21 files for validation.
-Epoch 1/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 10s 3s/step - accuracy: 0.5039 - loss: 2.6392 - val_accuracy: 0.1905 - val_loss: 2.1128
-Epoch 2/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.4240 - loss: 1.9267 - val_accuracy: 0.8095 - val_loss: 0.5096
-Epoch 3/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.6539 - loss: 0.6284 - val_accuracy: 0.9524 - val_loss: 0.4899
-Epoch 4/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.8269 - loss: 0.5221 - val_accuracy: 0.7619 - val_loss: 0.4202
-Epoch 5/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 3s/step - accuracy: 0.8483 - loss: 0.4140 - val_accuracy: 0.8095 - val_loss: 0.3005
-Epoch 6/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.9241 - loss: 0.2903 - val_accuracy: 0.9048 - val_loss: 0.1942
-Epoch 7/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.8852 - loss: 0.2948 - val_accuracy: 0.9048 - val_loss: 0.2827
-Epoch 8/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.9144 - loss: 0.1935 - val_accuracy: 0.9048 - val_loss: 0.2514
-Epoch 9/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.9106 - loss: 0.2299 - val_accuracy: 0.9048 - val_loss: 0.2682
-Epoch 10/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 8s 3s/step - accuracy: 0.9320 - loss: 0.1909 - val_accuracy: 0.9524 - val_loss: 0.1920
-1/1 ━━━━━━━━━━━━━━━━━━━━ 0s 453ms/step
-Macro recall: 0.9705882352941176
-Precision: 0.9
-Balanced accuracy: 0.9705882352941176
-Model accuracy: 0.9523809523809523
+**DL_Cell_Identification:**
+Epochs: 10
+![ksc_animation](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/821eaa55-855a-499b-9519-388a5af701e3)
+![lyi_animation 5 31 35 PM](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/761df35e-7e17-4de5-8ea6-2ae688d64803)
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
 ┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
@@ -101,8 +76,13 @@ Model accuracy: 0.9523809523809523
  Non-trainable params: 0 (0.00 B)
  Optimizer params: 27,745,158 (105.84 MB)
  
-/Users/hoang/Downloads/DL/ksc_animation.gif
-/Users/hoang/Downloads/DL/lyi_animation 5.31.35 PM.gif
+
+**DL_Confusion_Matrix:**
+Macro recall: 0.9705882352941176
+Precision: 0.9
+Balanced accuracy: 0.9705882352941176
+Model accuracy: 0.9523809523809523
+**Confusion Matrix of 100 Images of KSC and LYI respectively**
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
 ```python
