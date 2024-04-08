@@ -123,8 +123,9 @@ Metrics:
 ![Histogram](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/44453ad7-b3d4-4eba-877f-70cdc3087a3a)
 ![Binary Image 1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/df528932-6d7a-4d42-8cac-2c4a00d01e44)
 
-
-**non_deep_ML.py:**
+**ML_Feature_Extration.py:**
+- Insert plot + mini table spread
+This py program relies on a base set of different known cell types to train on and extract features from. After processing the given dataset (with directory set up accordingly), the program will output average eccentricity and area plots of each given cell type and generate a spreadsheet that displays all extracted features and their corresponding values.
 
 ### Included in the Repo
 
