@@ -1,0 +1,67 @@
+Found 15048 files belonging to 2 classes.
+Using 12039 files for training.
+Found 15048 files belonging to 2 classes.
+Using 3009 files for validation.
+Epoch 1/10
+377/377 [==============================] - 1056s 3s/step - loss: 0.3507 - accuracy: 0.8596 - val_loss: 0.2808 - val_accuracy: 0.9003
+Epoch 2/10
+377/377 [==============================] - 1043s 3s/step - loss: 0.2892 - accuracy: 0.8899 - val_loss: 0.2832 - val_accuracy: 0.8870
+Epoch 3/10
+377/377 [==============================] - 1049s 3s/step - loss: 0.2671 - accuracy: 0.9017 - val_loss: 0.2409 - val_accuracy: 0.9093
+Epoch 4/10
+377/377 [==============================] - 1043s 3s/step - loss: 0.2529 - accuracy: 0.9075 - val_loss: 0.2233 - val_accuracy: 0.9136
+Epoch 5/10
+377/377 [==============================] - 1045s 3s/step - loss: 0.2487 - accuracy: 0.9078 - val_loss: 0.2294 - val_accuracy: 0.9133
+Epoch 6/10
+377/377 [==============================] - 1061s 3s/step - loss: 0.2357 - accuracy: 0.9137 - val_loss: 0.2658 - val_accuracy: 0.9050
+Epoch 7/10
+377/377 [==============================] - 1055s 3s/step - loss: 0.2304 - accuracy: 0.9152 - val_loss: 0.2180 - val_accuracy: 0.9186
+Epoch 8/10
+377/377 [==============================] - 1052s 3s/step - loss: 0.2244 - accuracy: 0.9159 - val_loss: 0.2340 - val_accuracy: 0.9123
+Epoch 9/10
+377/377 [==============================] - 1050s 3s/step - loss: 0.2181 - accuracy: 0.9200 - val_loss: 0.2427 - val_accuracy: 0.9139
+Epoch 10/10
+377/377 [==============================] - 1052s 3s/step - loss: 0.2160 - accuracy: 0.9220 - val_loss: 0.2654 - val_accuracy: 0.9079
+<Figure size 640x480 with 0 Axes>
+<Figure size 640x480 with 0 Axes>
+Model: "model_22"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_23 (InputLayer)       [(None, 250, 250, 3)]     0         
+                                                                 
+ rescaling_22 (Rescaling)    (None, 250, 250, 3)       0         
+                                                                 
+ random_flip_22 (RandomFlip  (None, 250, 250, 3)       0         
+ )                                                               
+                                                                 
+ conv2d_66 (Conv2D)          (None, 248, 248, 32)      896       
+                                                                 
+ max_pooling2d_66 (MaxPooli  (None, 124, 124, 32)      0         
+ ng2D)                                                           
+                                                                 
+ conv2d_67 (Conv2D)          (None, 122, 122, 64)      18496     
+                                                                 
+ max_pooling2d_67 (MaxPooli  (None, 61, 61, 64)        0         
+ ng2D)                                                           
+                                                                 
+ conv2d_68 (Conv2D)          (None, 59, 59, 128)       73856     
+                                                                 
+ max_pooling2d_68 (MaxPooli  (None, 29, 29, 128)       0         
+ ng2D)                                                           
+                                                                 
+ flatten_22 (Flatten)        (None, 107648)            0         
+                                                                 
+ dense_44 (Dense)            (None, 128)               13779072  
+                                                                 
+ dropout_22 (Dropout)        (None, 128)               0         
+                                                                 
+ dense_45 (Dense)            (None, 2)                 258       
+                                                                 
+=================================================================
+Total params: 13872578 (52.92 MB)
+Trainable params: 13872578 (52.92 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
+The final training cost value is 0.21598894894123077
+The final validation cost value is 0.26541709899902344

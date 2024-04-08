@@ -1,0 +1,55 @@
+Found 14733 files belonging to 2 classes.
+Using 11787 files for training.
+Found 14733 files belonging to 2 classes.
+Using 2946 files for validation.
+Epoch 1/5
+369/369 [==============================] - 1048s 3s/step - loss: 0.3699 - accuracy: 0.8661 - val_loss: 0.1957 - val_accuracy: 0.9267
+Epoch 2/5
+369/369 [==============================] - 1044s 3s/step - loss: 0.1984 - accuracy: 0.9259 - val_loss: 0.2018 - val_accuracy: 0.9240
+Epoch 3/5
+369/369 [==============================] - 1035s 3s/step - loss: 0.1737 - accuracy: 0.9383 - val_loss: 0.1506 - val_accuracy: 0.9484
+Epoch 4/5
+369/369 [==============================] - 1034s 3s/step - loss: 0.1539 - accuracy: 0.9470 - val_loss: 0.1285 - val_accuracy: 0.9569
+Epoch 5/5
+369/369 [==============================] - 1037s 3s/step - loss: 0.1431 - accuracy: 0.9507 - val_loss: 0.1300 - val_accuracy: 0.9555
+<Figure size 640x480 with 0 Axes>
+<Figure size 640x480 with 0 Axes>
+Model: "model_19"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ input_20 (InputLayer)       [(None, 250, 250, 3)]     0         
+                                                                 
+ rescaling_19 (Rescaling)    (None, 250, 250, 3)       0         
+                                                                 
+ random_flip_19 (RandomFlip  (None, 250, 250, 3)       0         
+ )                                                               
+                                                                 
+ conv2d_57 (Conv2D)          (None, 248, 248, 32)      896       
+                                                                 
+ max_pooling2d_57 (MaxPooli  (None, 124, 124, 32)      0         
+ ng2D)                                                           
+                                                                 
+ conv2d_58 (Conv2D)          (None, 122, 122, 64)      18496     
+                                                                 
+ max_pooling2d_58 (MaxPooli  (None, 61, 61, 64)        0         
+ ng2D)                                                           
+                                                                 
+ conv2d_59 (Conv2D)          (None, 59, 59, 128)       73856     
+                                                                 
+ max_pooling2d_59 (MaxPooli  (None, 29, 29, 128)       0         
+ ng2D)                                                           
+                                                                 
+ flatten_19 (Flatten)        (None, 107648)            0         
+                                                                 
+ dense_38 (Dense)            (None, 128)               13779072  
+                                                                 
+ dropout_19 (Dropout)        (None, 128)               0         
+                                                                 
+ dense_39 (Dense)            (None, 2)                 258       
+                                                                 
+=================================================================
+Total params: 13872578 (52.92 MB)
+Trainable params: 13872578 (52.92 MB)
+Non-trainable params: 0 (0.00 Byte)
+_________________________________________________________________
