@@ -114,8 +114,8 @@ pip install matplotlib
 Alternatively, all parts of our project can be ran on Jupyter notebook or Google Colaboratory without the installation of additional imports except neuralplot. If any libraries or imports are missing, please follow the above python commands to install them. 
 
 ```bash
-git clone $THISREPO
-cd $THISREPO
+git clone https://github.com/sfu-cmpt340/2024_1_project_30.git
+cd 2024_1_project_30.git
 
 ```
 
