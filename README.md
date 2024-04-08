@@ -1,4 +1,4 @@
-# HUMERUS: Human Marrow Cell Recognition Using Deep Learning
+# HUMERUS: Human Marrow cEll Recognition USing deep learning
 Fun fact: the humerus is the bone in your upper arm
 
 (1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
