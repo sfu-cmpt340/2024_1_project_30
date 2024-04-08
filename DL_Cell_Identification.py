@@ -1,3 +1,7 @@
+# Creator: Chau Pham
+# Input: Databases from BM_cytomorphology_data and bone_marrow_cell_dataset
+# Output: Classification of cell type and accuracy score, keras model, loss graph
+
 # Import necessary libraries
 import numpy as np
 import tensorflow as tf
@@ -70,7 +74,7 @@ model.compile(optimizer="adam",
               metrics=["accuracy"])
 
 # Train the model with the training dataset and validate it with the validation dataset
-epochs = 20 #shouldn't be more than 20 
+epochs = 10 #shouldn't be more than 20 
 history = model.fit(train_ds, validation_data=val_ds, epochs=epochs)
 
 # Function to update the figure during the animation
@@ -137,13 +141,13 @@ model_dot = model_to_dot(model, show_shapes=True, show_layer_names=True, dpi=200
 SVG(model_dot.create(prog='dot', format='svg'))
 
 # To save the dot file, you would use:
-with open('model_architecture.dot', 'w') as f:
+with open('Kernas_Model.dot', 'w') as f:
     f.write(model_dot.to_string())
 
 # Optionally, if you want to save the visualization as an image file directly
-model_dot.write_png('model_architecture.png')
+model_dot.write_png('Kernas_Model.png')
 # or for a PDF file
-# model_dot.write_pdf('model_architecture.pdf')
+# model_dot.write_pdf('Kernas_Model.pdf')
 
 # Plot the training loss
 plt.plot(history.history['loss'], label='Training Loss')
@@ -153,4 +157,3 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend()
 plt.show()
-
