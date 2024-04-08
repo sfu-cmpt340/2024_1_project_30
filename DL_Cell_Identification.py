@@ -141,13 +141,13 @@ model_dot = model_to_dot(model, show_shapes=True, show_layer_names=True, dpi=200
 SVG(model_dot.create(prog='dot', format='svg'))
 
 # To save the dot file, you would use:
-with open('Kernas_Model.dot', 'w') as f:
+with open('Keras_Model.dot', 'w') as f:
     f.write(model_dot.to_string())
 
 # Optionally, if you want to save the visualization as an image file directly
-model_dot.write_png('Kernas_Model.png')
+model_dot.write_png('Keras_Model.png')
 # or for a PDF file
-# model_dot.write_pdf('Kernas_Model.pdf')
+# model_dot.write_pdf('Keras_Model.pdf')
 
 # Plot the training loss
 plt.plot(history.history['loss'], label='Training Loss')
