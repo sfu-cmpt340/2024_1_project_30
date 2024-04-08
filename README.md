@@ -50,20 +50,14 @@ Epochs: 10
 
 **DL_Confusion_Matrix:**
 
-Macro recall: 0.9705882352941176
-Precision: 0.9
-Balanced accuracy: 0.9705882352941176
-Model accuracy: 0.9523809523809523
+- Macro recall: 0.9705882352941176
+- Precision: 0.9
+- Balanced accuracy: 0.9705882352941176
+- Model accuracy: 0.9523809523809523
 
-**Confusion Matrix of 100 Combined Images of KSC and LYI in total**
+**Confusion Matrix of 21 Combined Training Images of KSC and LYI**
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
-```python
-from amazing import amazingexample
-imgs = amazingexample.demo()
-for img in imgs:
-    view(img)
-```
 
 ### What to find where
 
@@ -74,7 +68,6 @@ repository
 ├── Old_code                     ## Storage of discarded or duplicate program files
 ├── Results                      ## Files and images outputted by the package
 ├── src                          ## source code of the package itself
-├── scripts                      ## scripts, if needed
 ├── docs                         ## If needed, documentation   
 ├── README.md                    ## summary and project description for usage
 ```
@@ -152,7 +145,7 @@ drive.mount('/gdrive')
 Make sure you approve ALL permissions for colab to access your google drive.
 We recommend uploading the unzipped database files because unzipping on colab may take some time.
 
-To run DL_Cell_Identification.py, DL_Confusion_Matrix.py and (Insert Ryan's code file name), you'll want the NGS and EBO datasets (2.6GB)
+To run DL_Cell_Identification.py, DL_Confusion_Matrix.py and (Insert Ryan's code file name), you'll want the NGS and EBO datasets/or any two cell type classes from the database (2.6GB)
 set it up in a folder like:
 ```bash
 ├── bincvdebug.py
