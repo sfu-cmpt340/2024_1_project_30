@@ -37,8 +37,7 @@ As there are 5 separate .py programs to run, we will demo the work with a short 
 
 **DL_Cell_Identification:**
 
-This .py program takes >=2 classes/types of cells from the BM_Cytomorphology database and trains them over a user-specified number of epochs to classify cells. The program outputs a keras model corresponding to the Deep Learning process and an animation of the classification process of the >=2 chosen cell classes. The results are shown below. 
-Epochs: 10
+This .py program takes >=2 classes/types of cells from the BM_Cytomorphology database and trains them over a user-specified number of epochs to classify cells. The program outputs a keras model corresponding to the Deep Learning process and an animation of the classification process of the >=2 chosen cell classes. The results for epoch = 10 are shown below.
 ```bash
 Found 107 files belonging to 2 classes.
 Using 86 files for training.
@@ -105,6 +104,7 @@ Epoch 10/10
  
 
 **DL_Confusion_Matrix:**
+
 This .py program generates the analytics for the keras model in DL_Cell_Classification. The program computes precision, accuracy and recall of the cell classification predictions made and outputs the confusion matrix as seen in the demo below. 
 
 Metrics:
