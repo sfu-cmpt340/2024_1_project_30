@@ -175,12 +175,3 @@ model_dot.write_png('model_architecture.png')
 # or for a PDF file
 # model_dot.write_pdf('model_architecture.pdf')
 
-# Plot the training loss
-plt.plot(history.history['loss'], label='Training Loss')
-plt.plot(history.history['val_loss'], label='Validation Loss')
-plt.title('Model Loss')
-plt.ylabel('Loss')
-plt.xlabel('Epoch')
-plt.legend()
-plt.show()
-

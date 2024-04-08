@@ -145,7 +145,10 @@ set it up in a folder like:
 │       ├── EBO_00002.jpg
 │       └── EBO...
 ```
+Important Reminders: 
+- (Chau program code name): Currently, running the animations for the NN visualization only functions in VSCode and will not show up in Google Colaboratory or Jupyter Notebook.
 
+  
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
 2. [Annotated Dataset of Bone Marrow Cytology](https://www.cancerimagingarchive.net/collection/bone-marrow-cytomorphology_mll_helmholtz_fraunhofer/)
