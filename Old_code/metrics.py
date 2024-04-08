@@ -1,3 +1,6 @@
+# Creator: Nicola Murray
+# Input: Databases from BM_cytomorphology_data and bone_marrow_cell_dataset
+# Output: Confusion matrix, macro recall, precision, balanced and model accuracy 
 
 # Script to calcualte the metrics we will be using to evaluate our model.
 # These metrics will also allow us to compare our model with models from papers.
