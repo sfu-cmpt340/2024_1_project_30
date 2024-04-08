@@ -2,7 +2,7 @@
 # Co-creator: Chau Pham
 # Input: Databases from BM_cytomorphology_data and bone_marrow_cell_dataset
 # Output: Confusion matrix, macro recall, precision, balanced and model accuracy 
-# classification of cell type and accuracy score, kernas model
+# classification of cell type and accuracy score, keras model
 
 # Import necessary libraries
 import numpy as np
