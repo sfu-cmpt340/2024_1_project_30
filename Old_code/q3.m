@@ -1,3 +1,7 @@
+# Creator: Evan Mangat
+# Input: Just change path directories to the ones where data is stored
+# Output: Visualizations and Graphs
+
 % Load images
 img1 = imread('C:\Users\evanm\Documents\Homework\CMPT 340\Project\Blood_Cancer\Blood_Cancer\Sample_2.tiff');
 img2 = imread('C:\Users\evanm\Documents\Homework\CMPT 340\Project\Blood_Cancer\Blood_Cancer\Sample_3.tiff');
