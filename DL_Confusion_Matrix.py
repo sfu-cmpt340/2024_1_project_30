@@ -1,3 +1,9 @@
+# Creator: Nicola Murray
+# Co-creator: Chau Pham
+# Input: Databases from BM_cytomorphology_data and bone_marrow_cell_dataset
+# Output: Confusion matrix, macro recall, precision, balanced and model accuracy 
+# classification of cell type and accuracy score, kernas model
+
 # Import necessary libraries
 import numpy as np
 import tensorflow as tf
@@ -167,11 +173,10 @@ model_dot = model_to_dot(model, show_shapes=True, show_layer_names=True, dpi=200
 SVG(model_dot.create(prog='dot', format='svg'))
 
 # To save the dot file, you would use:
-with open('model_architecture.dot', 'w') as f:
+with open('Kernas_Model.dot', 'w') as f:
     f.write(model_dot.to_string())
 
 # Optionally, if you want to save the visualization as an image file directly
-model_dot.write_png('model_architecture.png')
+model_dot.write_png('Kernas_Model.png')
 # or for a PDF file
-# model_dot.write_pdf('model_architecture.pdf')
-
+# model_dot.write_pdf('Kernas_Model.pdf')
