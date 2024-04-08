@@ -7,8 +7,17 @@ from skimage.color import rgb2gray
 from skimage.filters import threshold_otsu
 from skimage.measure import label, regionprops
 from scipy.stats import skew, kurtosis
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import classification_report, accuracy_score
 
-# Define your feature extraction function here
+#################################################################
+# # Creator: Evan Mangat
+# Input: Just change path directiories to the ones where data is stored
+# Output: Data Spreadsheets, Visualizations and Graphs
+#################################################################
+
 def extract_features(image_path):
     # Load the image
     image = io.imread(image_path)
@@ -139,3 +148,44 @@ average_features_csv_path = 'C:/Users/evanm/Documents/Homework/CMPT 340/Project_
 average_features_per_cell_type.to_csv(average_features_csv_path)
 
 print(f"Averages saved to CSV file at: {average_features_csv_path}")
+
+# Plotting the average 'Area'
+plt.figure(figsize=(10, 6))
+average_features_per_cell_type['Area'].plot(kind='bar')
+plt.title('Average Area by Cell Type')
+plt.xlabel('Cell Type')
+plt.ylabel('Average Area')
+plt.xticks(rotation=45)  # Rotate labels to avoid overlap
+plt.tight_layout()  # Adjust layout to make room for the rotated x-axis labels
+plt.show()
+
+# Plotting the average 'Eccentricity'
+plt.figure(figsize=(10, 6))
+average_features_per_cell_type['Eccentricity'].plot(kind='bar', color='orange')
+plt.title('Average Eccentricity by Cell Type')
+plt.xlabel('Cell Type')
+plt.ylabel('Average Eccentricity')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.show()
+
+######### MODEL TRAINING
+
+X = df.drop('Cell_Type', axis=1)  # Features
+y = df['Cell_Type']  # Labels
+
+# Splitting the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Initialize the model
+model = RandomForestClassifier(n_estimators=100, random_state=42)
+
+# Train the model
+model.fit(X_train, y_train)
+
+# Predict on the testing set
+y_pred = model.predict(X_test)
+
+# Evaluating the model
+print(classification_report(y_test, y_pred))
+print("Accuracy:", accuracy_score(y_test, y_pred))
