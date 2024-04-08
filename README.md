@@ -1,6 +1,5 @@
-# SFU CMPT 340 Project Template -- Replace with project title
-This repository is a template for your CMPT 340 course project.
-Replace the title with your project title, and **add a snappy acronym that people remember (mnemonic)**.
+# HUMERUS: Human Marrow Cell Recognition Using Deep Learning
+Fun fact: the humerus is the bone in your upper arm
 
 (1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
 Take 2: Our project takes cell images obtained from bone marrow smears as input and trains with Machine Learning and Deep Learning to classify cells and extract their features. Then we output the results visually into models, plots and spreadsheets of values. 
@@ -116,9 +115,14 @@ Metrics:
 **Confusion Matrix of 21 Combined Training Images of KSC and LYI**
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
-**bincvdebug.py**
+**bincvdebug.py:**
 
 **Q3.py:**
+![Figure_1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/5ff7baa7-cd24-47c2-ae28-877f0ddf9a69)
+![Enhacnced Noised Reduced Image](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/6844b949-b5d6-4919-a93b-7362c5982992)
+![Histogram](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/44453ad7-b3d4-4eba-877f-70cdc3087a3a)
+![Binary Image 1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/df528932-6d7a-4d42-8cac-2c4a00d01e44)
+
 
 **non_deep_ML.py:**
 
@@ -140,7 +144,7 @@ Before usage of this project, please make sure the following are installed:
 
 1. Python 3.11+
 2. OpenCV (any version)
-3. numpy, keras, tensorflow, matplotlib.pyplot, matplotlib.animation, neuralplot, pydot,graphviz, scikit-learn
+3. numpy, keras, tensorflow, matplotlib.pyplot, matplotlib.animation, neuralplot, pydot,graphviz, scikit-learn,skimage.filters
 
 Our program utilises tensorflow and neuralplot to produce Keras models of the provided databases during training while OpenCV and matlab plots are necessary for image processing and visualization. To install the libraries, paste the following commands into your IDE command window: 
 
@@ -166,6 +170,13 @@ pip install graphviz
 
 pip install os-sys
 pip install matplotlib
+
+# For macOS:
+python3 -m pip install -U pip
+python3 -m pip install -U scikit-image
+# For Windows:
+python -m pip install -U pip
+python -m pip install -U scikit-image
 ```
 
 Alternatively, all parts of our project can be run on Jupyter notebook or Google Colaboratory without the installation of additional imports except neuralplot. If any libraries or imports are missing, please follow the above python commands to install them. 
@@ -210,16 +221,37 @@ set it up in a folder like:
 │       ├── EBO_00002.jpg
 │       └── EBO...
 ```
-For VSCode, you can run the code by pressing the button above in the right corner.
+
+To run  ML_Feature_Extraction.py you'll want the you'll want the NGS and EBO datasets/or any two cell type classes from the database (2.6GB)
+set it up in a folder like:
+```bash
+├── ML_Feature_Extraction.py 
+├── data
+│   ├── 0
+│       ├── NGS_00001.jpg
+│       ├── NGS_00002.jpg
+│       └── NGS...
+│   ├── 1
+│       ├── EBO_00001.jpg
+│       ├── EBO_00002.jpg
+│       └── EBO...
+```
+
+To run q3.py, you'll want only the Blood_Cancer database set up as follows:
+```bash
+├── q3.py
+├── data
+│   ├── Blood_Cancer
+│       ├── Sample_1.tiff
+│       ├── Sample_2.tiff
+│       └── Sample...
+```
+For VSCode, you can run the code by pressing the play button above in the right corner.
 ![image](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/31b27fb1-3c2f-4fa8-8f73-75a30a32071e)
-
-
-To run (Insert Evan's code file name), you'll want the (database insert here) and set up as following:
-- To be added
 
 Important Reminders: 
 - DL_Cell_Identification and DL_Confusion_Matrix: Currently, running the animations for the cell identification visualization only functions in VSCode and will not show up in Google Colaboratory or Jupyter Notebook.
-- At this time, the Blood_Cancer dataset is non-compatible with the Deep Learning programs as the dataset uses tiff image files. The Deep Learning programs accept jpeg, jpg, png and such file types as input.
+- At this time, the Blood_Cancer dataset is non-compatible with the Deep Learning programs, and ML_Feature_Extraction.py,  as the dataset uses tiff image files. The Deep Learning programs accept jpeg, jpg, png and such file types as input.
   
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
@@ -230,4 +262,5 @@ Output will be saved in the following ways:
 - The Keras model outputted by DL_Cell_Identification.py will be saved as PNG and DOT files.
 - Additionally, the loss graph of the keras model can be saved to a local drive/folder as a PNG file.
 - The confusion matrix generated by DL_Confusion_Matrix.py can be saved to a local drive as a PNG file. 
-
+- The results generated by ML_Feature_Extraction.py can be saved to a local drive as a PNG file. 
+- The results generated by q3.py can be saved to a local drive as a PNG file. 
