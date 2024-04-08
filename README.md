@@ -131,10 +131,12 @@ drive.mount('/gdrive')
 Make sure you approve ALL permissions for colab to access your google drive.
 We recommend uploading the unzipped database files because unzipping on colab may take some time.
 
-To run Ryan's and Chau's code, you'll want the NGS and EBO datasets (2.6GB)
+To run Ryan's and Chau's code (one at a time), you'll want the NGS and EBO datasets (2.6GB)
 set it up in a folder like:
 ```bash
 ├── bincvdebug.py
+├── DL_Cell_Identification.py
+├── DL_Confusion_Matrix.py
 ├── data
 │   ├── 0
 │       ├── NGS_00001.jpg
@@ -147,7 +149,7 @@ set it up in a folder like:
 ```
 Important Reminders: 
 - DL_Cell_Identification and DL_Confusion_Matrix: Currently, running the animations for the cell identification visualization only functions in VSCode and will not show up in Google Colaboratory or Jupyter Notebook.
-At this time, none of the DL code works with Blood_Cancer database because the database image file is in tiff, while the DL code only accepts jpeg, jpg, png.etc 
+- At this time, none of the DL code works with Blood_Cancer database because the database image file is in tiff, while the DL code only accepts jpeg, jpg, png.etc 
   
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
