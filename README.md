@@ -173,7 +173,7 @@ Alternatively, all parts of our project can be ran on Jupyter notebook or Google
 
 ```bash
 git clone https://github.com/sfu-cmpt340/2024_1_project_30.git
-cd 2024_1_project_30.git
+cd 2024_1_project_30
 
 ```
 
