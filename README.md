@@ -15,7 +15,6 @@ Our project takes cell images obtained from bone marrow smears as input and trai
 
 
 ## Video/demo/GIF
-Record a short video (1:40 - 2 minutes maximum) or gif or a simple screen recording or even using PowerPoint with audio or with text, showcasing your work.
 
 [Demo Link - Downloadable as an MP4](https://cdn.discordapp.com/attachments/1215111433013039104/1227127707884585000/video.mp4?ex=662746bc&is=6614d1bc&hm=e7a25ee41a7b095619f219043003dce773bbd7504f4c431cbff02926529b5f18&)
 
@@ -218,6 +217,7 @@ Important Reminders:
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
 2. [Annotated Dataset of Bone Marrow Cytology](https://www.cancerimagingarchive.net/collection/bone-marrow-cytomorphology_mll_helmholtz_fraunhofer/)
+3. 
 
 Output will be saved in the following ways:
 - The Keras model outputted by DL_Cell_Identification.py will be saved as PNG and DOT files.
