@@ -1,4 +1,4 @@
-# HUMERUS: HUman Marrow cEll Recognition USing deep learning
+![n_class_dl_accuracy](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/147e0f63-3d75-40ac-affc-2bc80964c85d)# HUMERUS: HUman Marrow cEll Recognition USing deep learning
 Fun fact: the humerus is the bone in your upper arm
 
 (1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
@@ -37,71 +37,14 @@ As there are 5 separate .py programs to run, we will demo the work with a short 
 **DL_Cell_Identification:**
 
 This .py program takes >=2 classes/types of cells from the BM_Cytomorphology database and trains them over a user-specified number of epochs to classify cells. The program outputs a keras model corresponding to the Deep Learning process and an animation of the classification process of the >=2 chosen cell classes. The results for epoch = 10 are shown below.
-```bash
-Found 107 files belonging to 2 classes.
-Using 86 files for training.
-Found 107 files belonging to 2 classes.
-Using 21 files for validation.
-Epoch 1/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 10s 3s/step - accuracy: 0.5039 - loss: 2.6392 - val_accuracy: 0.1905 - val_loss: 2.1128
-Epoch 2/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.4240 - loss: 1.9267 - val_accuracy: 0.8095 - val_loss: 0.5096
-Epoch 3/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.6539 - loss: 0.6284 - val_accuracy: 0.9524 - val_loss: 0.4899
-Epoch 4/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.8269 - loss: 0.5221 - val_accuracy: 0.7619 - val_loss: 0.4202
-Epoch 5/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 3s/step - accuracy: 0.8483 - loss: 0.4140 - val_accuracy: 0.8095 - val_loss: 0.3005
-Epoch 6/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 6s 2s/step - accuracy: 0.9241 - loss: 0.2903 - val_accuracy: 0.9048 - val_loss: 0.1942
-Epoch 7/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.8852 - loss: 0.2948 - val_accuracy: 0.9048 - val_loss: 0.2827
-Epoch 8/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.9144 - loss: 0.1935 - val_accuracy: 0.9048 - val_loss: 0.2514
-Epoch 9/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 7s 2s/step - accuracy: 0.9106 - loss: 0.2299 - val_accuracy: 0.9048 - val_loss: 0.2682
-Epoch 10/10
-3/3 ━━━━━━━━━━━━━━━━━━━━ 8s 3s/step - accuracy: 0.9320 - loss: 0.1909 - val_accuracy: 0.9524 - val_loss: 0.1920
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━┓
-┃ Layer (type)                         ┃ Output Shape                ┃         Param # ┃
-┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━┩
-│ input_layer (InputLayer)             │ (None, 250, 250, 3)         │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ rescaling (Rescaling)                │ (None, 250, 250, 3)         │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ random_flip (RandomFlip)             │ (None, 250, 250, 3)         │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ conv2d (Conv2D)                      │ (None, 248, 248, 32)        │             896 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ max_pooling2d (MaxPooling2D)         │ (None, 124, 124, 32)        │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ conv2d_1 (Conv2D)                    │ (None, 122, 122, 64)        │          18,496 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ max_pooling2d_1 (MaxPooling2D)       │ (None, 61, 61, 64)          │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ conv2d_2 (Conv2D)                    │ (None, 59, 59, 128)         │          73,856 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ max_pooling2d_2 (MaxPooling2D)       │ (None, 29, 29, 128)         │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ flatten (Flatten)                    │ (None, 107648)              │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ dense (Dense)                        │ (None, 128)                 │      13,779,072 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ dropout (Dropout)                    │ (None, 128)                 │               0 │
-├──────────────────────────────────────┼─────────────────────────────┼─────────────────┤
-│ dense_1 (Dense)                      │ (None, 2)                   │             258 │
-└──────────────────────────────────────┴─────────────────────────────┴─────────────────┘
- Total params: 41,617,736 (158.76 MB)
- Trainable params: 13,872,578 (52.92 MB)
- Non-trainable params: 0 (0.00 B)
- Optimizer params: 27,745,158 (105.84 MB)
-```
 ![ksc_animation](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/821eaa55-855a-499b-9519-388a5af701e3)
 ![lyi_animation 5 31 35 PM](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/761df35e-7e17-4de5-8ea6-2ae688d64803)
 ![Model Loss of KSC and LYI](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/e91d4c3b-5eae-4a83-95db-8359a91d3dc5)
 
  **DL_Cell_Identification_NN**
+ 
  Here is the visualization of Neural Network from the keras model of DL_Cell_Identification
+ 
 ![DL_Cell_Identification_NNgrid](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/aa030214-e24f-4186-bacd-29452d74b577)
 ![DL_Cell_Identification_NN](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/5b8ed0de-2e1d-402a-a0e6-3e6d184bb4ed)
 
@@ -120,10 +63,15 @@ Metrics:
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
 **multilayer_classifier_3x3conv.py:**
+![n_class_dl_accuracy](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/f290a6f4-1fd9-40cd-a9c0-d6a91a518ebf)
+![n_class_dl_loss](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/d52b9e49-bd2a-444f-9e7e-e0bd9fab8ee3)
+
 
 
 **multilayer_classifier_3x3conv_NN.py:**
+
  Here is the visualization of Neural Network from the keras model of multilayer_classifier_3x3conv_NN
+ 
 ![multilayer_classifier_3x3conv_NNgrid](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c2f0d81d-5111-4779-8a8f-cdb1d492eb00)
 ![multilayer_classifier_3x3conv_NN](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/46f424bd-0907-40f5-9bc7-76b4f218579a)
 
