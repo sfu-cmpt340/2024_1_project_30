@@ -217,7 +217,7 @@ Important Reminders:
 Datasets used in our analysis can be found: 
 1. [Blood Cancer Cells Taken from Blood Smears](https://www.kaggle.com/datasets/akhiljethwa/blood-cancer-image-dataset)
 2. [Annotated Dataset of Bone Marrow Cytology](https://www.cancerimagingarchive.net/collection/bone-marrow-cytomorphology_mll_helmholtz_fraunhofer/)
-3. 
+
 
 Output will be saved in the following ways:
 - The Keras model outputted by DL_Cell_Identification.py will be saved as PNG and DOT files.
