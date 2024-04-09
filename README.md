@@ -1,8 +1,7 @@
 # HUMERUS: HUman Marrow cEll Recognition USing deep learning
 Fun fact: the humerus is the bone in your upper arm
 
-(1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
-Take 2: Our project takes cell images obtained from bone marrow smears as input and trains with Machine Learning and Deep Learning to classify cells and extract their features. Then we output the results visually into models, plots and spreadsheets of values. 
+Our project takes cell images obtained from bone marrow smears as input and trains with Machine Learning and Deep Learning to classify cells and extract their features. Then we output the results visually into models, plots and spreadsheets of values. 
 
 ## Important Links
 
@@ -62,6 +61,9 @@ Metrics:
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
 **multilayer_classifier_3x3conv:**
+
+Generates, trains, and predicts a Keras CNN with convolution-maxpooling blocks and residuals. Requires TensorFlow, Keras, NumPy, and Python 3.8 or higher.
+
 ![n_class_dl_accuracy](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/f290a6f4-1fd9-40cd-a9c0-d6a91a518ebf)
 ![n_class_dl_loss](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/d52b9e49-bd2a-444f-9e7e-e0bd9fab8ee3)
 
@@ -84,7 +86,7 @@ The images and accompanying text describe the process of enhancing microscopic c
 
 **ML_Feature_Extration:**
 
-This py program relies on a base set of different known cell types to train on and extract features from. After processing the given dataset (with directory set up accordingly), the program will output average eccentricity and area plots of each given cell type and generate a spreadsheet that displays all extracted features and their corresponding values.
+This py program relies on a base set of different known cell types to train on and extract features from it. After processing the given dataset (with directory set up accordingly), the program will output average eccentricity and area plots of each given cell type and generate a spreadsheet that displays all extracted features and their corresponding values.
 
 ![image (2)](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/9a02cae6-36b4-4917-bc1d-32bb19f90c53)
 
