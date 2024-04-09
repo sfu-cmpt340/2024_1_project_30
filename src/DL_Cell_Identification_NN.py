@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 # Creator: Chau Pham
 # Referenced https://github.com/Rajsoni03/neuralplot for visualizing keras model in NN
-# Input: Databases from BM_cytomorphology_data and bone_marrow_cell_dataset
-# Output: Classification of cell type and accuracy score, keras model, loss graph
+# Input: Keras Model 
+# Output: 3D neural net visualization of keras model
+
 # THIS ONLY WORKS IN GOOGLE COLAB ONLY NOT VSCODE
 """DL_Cell_Identification_NN.ipynb
 
