@@ -1,4 +1,4 @@
-# HUMERUS: Human Marrow cEll Recognition USing deep learning
+# HUMERUS: HUman Marrow cEll Recognition USing deep learning
 Fun fact: the humerus is the bone in your upper arm
 
 (1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
@@ -100,7 +100,8 @@ Epoch 10/10
 ![lyi_animation 5 31 35 PM](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/761df35e-7e17-4de5-8ea6-2ae688d64803)
 ![Model Loss of KSC and LYI](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/e91d4c3b-5eae-4a83-95db-8359a91d3dc5)
 
- 
+ **DL_Cell_Identification_NN**
+
 
 **DL_Confusion_Matrix:**
 
@@ -115,7 +116,13 @@ Metrics:
 **Confusion Matrix of 21 Combined Training Images of KSC and LYI**
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
-**bincvdebug.py:**
+**multilayer_classifier_3x3conv.py:**
+
+
+**multilayer_classifier_3x3conv_NN.py:**
+![multilayer_classifier_3x3conv_NNgrid](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c2f0d81d-5111-4779-8a8f-cdb1d492eb00)
+![multilayer_classifier_3x3conv_NN](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/46f424bd-0907-40f5-9bc7-76b4f218579a)
+
 
 **Q3.py:**
 ![Figure_1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/5ff7baa7-cd24-47c2-ae28-877f0ddf9a69)
@@ -126,6 +133,9 @@ Metrics:
 **ML_Feature_Extration.py:**
 - Insert plot + mini table spread
 This py program relies on a base set of different known cell types to train on and extract features from. After processing the given dataset (with directory set up accordingly), the program will output average eccentricity and area plots of each given cell type and generate a spreadsheet that displays all extracted features and their corresponding values.
+
+
+
 
 ### Included in the Repo
 
@@ -206,10 +216,10 @@ drive.mount('/gdrive')
 Make sure you approve ALL permissions for colab to access your google drive.
 We recommend uploading the unzipped database files because unzipping on colab may take some time.
 
-To run DL_Cell_Identification.py, DL_Confusion_Matrix.py and (Insert Ryan's code file name), you'll want the NGS and EBO datasets/or any two cell type classes from the database (2.6GB)
+To run DL_Cell_Identification.py, DL_Confusion_Matrix.py and multilayer_classifier_3x3conv, you'll want the NGS and EBO datasets/or any two cell type classes from the database (2.6GB)
 set it up in a folder like:
 ```bash
-├── bincvdebug.py
+├── multilayer_classifier_3x3conv.py
 ├── DL_Cell_Identification.py
 ├── DL_Confusion_Matrix.py
 ├── data
