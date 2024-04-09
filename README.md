@@ -1,4 +1,4 @@
-![n_class_dl_accuracy](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/147e0f63-3d75-40ac-affc-2bc80964c85d)# HUMERUS: HUman Marrow cEll Recognition USing deep learning
+# HUMERUS: HUman Marrow cEll Recognition USing deep learning
 Fun fact: the humerus is the bone in your upper arm
 
 (1-2 line summary) Take 1: Our project takes cell images from bone marrow smears as input and classifies them via feature extraction and training (ML). 
@@ -62,13 +62,13 @@ Metrics:
 **Confusion Matrix of 21 Combined Training Images of KSC and LYI**
 ![Confusion Matrix LYI KSCpng](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/c3184fe8-c830-42d7-b3f9-b6d64b13b908)
 
-**multilayer_classifier_3x3conv.py:**
+**multilayer_classifier_3x3conv:**
 ![n_class_dl_accuracy](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/f290a6f4-1fd9-40cd-a9c0-d6a91a518ebf)
 ![n_class_dl_loss](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/d52b9e49-bd2a-444f-9e7e-e0bd9fab8ee3)
 
 
 
-**multilayer_classifier_3x3conv_NN.py:**
+**multilayer_classifier_3x3conv_NN:**
 
  Here is the visualization of Neural Network from the keras model of multilayer_classifier_3x3conv_NN
  
@@ -76,15 +76,21 @@ Metrics:
 ![multilayer_classifier_3x3conv_NN](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/46f424bd-0907-40f5-9bc7-76b4f218579a)
 
 
-**Q3.py:**
+**Q3:**
+
+The images and accompanying text describe the process of enhancing microscopic cell images by adjusting contrast and reducing noise to improve feature visibility for better analysis
+
 ![Figure_1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/5ff7baa7-cd24-47c2-ae28-877f0ddf9a69)
 ![Enhacnced Noised Reduced Image](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/6844b949-b5d6-4919-a93b-7362c5982992)
 ![Histogram](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/44453ad7-b3d4-4eba-877f-70cdc3087a3a)
 ![Binary Image 1](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/df528932-6d7a-4d42-8cac-2c4a00d01e44)
 
-**ML_Feature_Extration.py:**
-- Insert plot + mini table spread
+**ML_Feature_Extration:**
+
 This py program relies on a base set of different known cell types to train on and extract features from. After processing the given dataset (with directory set up accordingly), the program will output average eccentricity and area plots of each given cell type and generate a spreadsheet that displays all extracted features and their corresponding values.
+
+![image (2)](https://github.com/sfu-cmpt340/2024_1_project_30/assets/71118130/9a02cae6-36b4-4917-bc1d-32bb19f90c53)
+
 
 
 
